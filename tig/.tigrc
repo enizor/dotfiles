@@ -1,0 +1,39 @@
+# Generic bindings
+bind generic <Up> move-up
+bind generic <Down> move-down
+bind generic <LessThan> !git fetch --all
+bind generic > !git push
+bind generic ^ ?git push --force
+
+# Main bindings
+bind main B !git rebase -i %(commit)
+bind main p !git pull --rebase
+bind main y @bash -c "echo -n `echo %(commit) | cut -c 1-7` | xclip -selection c" # Copy first 7 chars of commit hash
+bind main Y @bash -c "echo -n %(commit) | xclip -selection c" # Copy full commit hash
+
+# Refs bindings
+bind refs B ?git checkout -b "%(prompt Enter Branch name: )"
+bind refs c @git checkout %(commit)
+bind refs b ?git rebase %(remote)/%(branch)
+
+# Status bindings
+bind status a status-update
+bind status S !git stash
+# Stage bindings
+bind stage a status-update
+#bind stage s !git stash push -p %() 
+
+# Formatting 
+set line-graphics = utf-8
+
+set main-view-date = custom
+set main-view-date-format = "%d %b %y"
+set refs-view-date = custom
+set refs-view-date-format = "%d %b %y"
+set blame-view-date = custom
+set blame-view-date-format = "%d %b %y"
+set stash-view-date = custom
+set stash-view-date-format = "%d %b %y"
+set tree-view-date = custom
+set tree-view-date-format = "%d %b %y"
+
