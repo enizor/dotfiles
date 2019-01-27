@@ -21,9 +21,9 @@ bind status a status-update
 bind status S !git stash
 # Stage bindings
 bind stage a status-update
-#bind stage s !git stash push -p %() 
+#bind stage s !git stash push -p %()
 
-# Formatting 
+# Formatting
 set line-graphics = utf-8
 
 set main-view-date = custom
@@ -37,3 +37,4 @@ set stash-view-date-format = "%d %b %y"
 set tree-view-date = custom
 set tree-view-date-format = "%d %b %y"
 
+set diff-highlight = true
