@@ -1,3 +1,6 @@
+# TO profile zsh' stratup time
+# zmodload zsh/zprof
+
 # where is antibody keeping its stuff?
 ANTIBODY_HOME="$(antibody home)"
 
@@ -21,6 +24,9 @@ DISABLE_AUTO_UPDATE="true"
 # Regenerate with `antibody bundle < ~/.zsh_plugins.txt >! ~/.zsh_plugins.sh`
 source ~/.zsh_plugins.sh
 
+# Reload completions
+autoload -U compinit && compinit
+
 # Keybindings - from the sane defaults in /etc/inputrc
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
@@ -43,3 +49,6 @@ bindkey "\e[F" end-of-line
 
 # fasd init
 eval "$(fasd --init auto)"
+
+# Zsh startup time profiling
+# zprof
