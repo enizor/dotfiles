@@ -1,0 +1,12 @@
+# Oh-My-Zsh installation
+robbyrussell/oh-my-zsh
+
+# powerlevel9k ZSH theme
+badouralix/oh-my-via
+
+# Plugins from OMZ
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/cargo/ kind:fpath
+robbyrussell/oh-my-zsh path:plugins/colored-man-pages
+
+zsh-users/zsh-syntax-highlighting

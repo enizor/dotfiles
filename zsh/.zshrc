@@ -59,5 +59,13 @@ bindkey "\e[F" end-of-line
 # fasd init
 eval "$(fasd --init auto)"
 
+source /usr/share/nvm/init-nvm.sh
+
 # Zsh startup time profiling
 # zprof
+
+# opam configuration
+test -r /home/remi/.opam/opam-init/init.zsh && . /home/remi/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# Add local binaries
+export PATH=~/.local/bin/:$PATH
