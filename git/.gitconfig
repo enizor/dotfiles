@@ -1,0 +1,27 @@
+[user]
+	name = Rémi Garde
+	email = remi.garde@free.fr
+
+[core]
+	editor = micro
+
+[color "diff-highlight"]
+# Custom colors for diff highlighting
+	oldNormal = red bold
+	oldHighlight = red bold ul
+	newNormal = green bold
+	newHighlight = green bold ul
+
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color]
+	ui = true
+
+[diff-so-fancy]
+	stripLeadingSymbols = false
