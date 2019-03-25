@@ -13,7 +13,7 @@ bind main Y @bash -c "echo -n %(commit) | xclip -selection c" # Copy full commit
 
 # Refs bindings
 bind refs B ?git checkout -b "%(prompt Enter Branch name: )"
-bind refs C @git checkout %(remote)/%(branch)
+bind refs C ?git checkout %(branch)
 bind refs c @git checkout %(commit)
 bind refs b ?git rebase %(remote)/%(branch)
 bind refs ^ ?git push -u %(remote) %(branch)
