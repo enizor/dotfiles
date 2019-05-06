@@ -418,6 +418,8 @@ key_bindings:
   - { key: PageDown, mods: Control, chars: "\x1b[6;5~"                   }
   - { key: PageDown,                chars: "\x1b[6~"                     }
   - { key: Tab,      mods: Shift,   chars: "\x1b[Z"                      }
+  - { key: Tab,      mods: Control, chars: "\e[27;5;9~"                  }
+  - { key: Tab,      mods: Control|Shift,   chars: "\e[27;6;9~"              }
   - { key: Back,                    chars: "\x7f"                        }
   - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
   - { key: Insert,                  chars: "\x1b[2~"                     }
@@ -502,8 +504,3 @@ key_bindings:
   - { key: F10,      mods: Super,   chars: "\x1b[21;3~"                  }
   - { key: F11,      mods: Super,   chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                  }
-# Tmux keybindings for easy tabs
-  - { key: T,   mods: Control, command: { program: "/usr/bin/tmux", args: ["new-window"] } }
-  - { key: Tab, mods: Control, command: { program: "/usr/bin/tmux", args: ["next-window"] } }
-  - { key: Tab, mods: Control|Shift, command: { program: "/usr/bin/tmux", args: ["previous-window"] } }
-  - { key: W,   mods: Control, command: { program: "/usr/bin/tmux", args: ["kill-pane"] } }
