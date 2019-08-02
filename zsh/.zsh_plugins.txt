@@ -2,7 +2,9 @@
 robbyrussell/oh-my-zsh
 
 # powerlevel9k ZSH theme
-bhilburn/powerlevel9k
+# bhilburn/powerlevel9k
+
+romkatv/powerlevel10k
 
 # Plugins from OMZ
 robbyrussell/oh-my-zsh path:plugins/git
