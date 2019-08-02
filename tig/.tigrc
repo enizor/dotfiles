@@ -3,7 +3,7 @@ bind generic <Up> move-up
 bind generic <Down> move-down
 bind generic <LessThan> !git fetch --all
 bind generic > !git push
-bind generic ^ ?git push --force
+bind generic ^ ?git push --force-with-lease
 
 # Main bindings
 bind main B !git rebase -i %(commit)
