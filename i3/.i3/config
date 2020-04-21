@@ -185,7 +185,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 assign [class="Alacritty"] $ws1
-assign [class="Firefox"] $ws2
+assign [class="firefoxdeveloperedition"] $ws2
 assign [class="code"] $ws3
 assign [class="Thunderbird|Telegram"] $ws4
 # assign [class="Pcmanfm"] $ws3
@@ -287,12 +287,11 @@ exec --no-startup-id clipit
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 10 -locker blurlock -corners ----
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id libinput-gestures
-exec --no-startup-id "setxkbmap -layout eu"
-exec --no-startup-id "setxkbmap -option 'ctrl:nocaps'"
+exec --no-startup-id "setxkbmap -layout eu -option 'ctrl:nocaps'"
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
