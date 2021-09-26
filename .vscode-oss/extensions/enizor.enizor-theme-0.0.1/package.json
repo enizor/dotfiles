@@ -1,0 +1,28 @@
+{
+	"name": "enizor-theme",
+	"displayName": "enizor-theme",
+	"description": "Custom personal theme",
+	"version": "0.0.1",
+	"publisher": "enizor",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "enizor-theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/enizor-theme-color-theme.json"
+			},
+			{
+				"label": "enizor-wip",
+				"uiTheme": "vs-dark",
+				"path": "./themes/enizor-wip-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {}
+}
