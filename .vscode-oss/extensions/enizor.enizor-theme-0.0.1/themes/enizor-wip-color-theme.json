@@ -3,7 +3,7 @@
     "name": "enizor-wip",
 	"type": "dark",
 	"colors": {
-		"activityBarBadge.background": "#339933",
+		"activityBarBadge.background": "#6666CC",
 		"editor.background": "#202020",
 		"editor.foreground": "#CCCCCC",
 		"editor.inactiveSelectionBackground": "#35353540",
@@ -631,7 +631,6 @@
 		{
 			"scope": [
 				"constant.numeric",
-				"variable.other.enummember",
 				"keyword.operator.plus.exponent",
 				"keyword.operator.minus.exponent"
 			],
@@ -784,24 +783,13 @@
 			}
 		},
 		{
-			"scope": "storage",
-			"settings": {
-				"foreground": "#339999"
-			}
-		},
-		{
-			"scope": "storage.type",
-			"settings": {
-				"foreground": "#339999"
-			}
-		},
-		{
 			"scope": [
 				"storage.modifier",
+				"storage.type.modifier",
 				"keyword.operator.noexcept"
 			],
 			"settings": {
-				"foreground": "#339999"
+				"foreground": "#339933"
 			}
 		},
 		{
@@ -873,6 +861,15 @@
 			"settings": {
 				"foreground": "#CCCC33"
 			}
+		},		{
+			"scope": [ 
+				"keyword.control.directive.include.cpp",
+				"string.quoted.double.include.cpp",
+				"string.quoted.other.lt-gt.include.cpp",
+			],
+			"settings": {
+				"foreground": "#996699"
+			}
 		},
 		{
 			"scope": "keyword.operator",
@@ -922,13 +919,13 @@
 				"storage.modifier.package.java"
 			],
 			"settings": {
-				"foreground": "#339999"
+				"foreground": "#6666CC"
 			}
 		},
 		{
 			"scope": "variable.language",
 			"settings": {
-				"foreground": "#339933"
+				"foreground": "#339999"
 			}
 		},
 		{
@@ -950,6 +947,7 @@
 				"support.type",
 				"entity.name.type",
 				"entity.name.class",
+				"storage.type",
 				"storage.type.numeric.go",
 				"storage.type.byte.go",
 				"storage.type.boolean.go",
@@ -974,10 +972,11 @@
 				"storage.type.generic.groovy",
 				"storage.type.object.array.groovy",
 				"storage.type.primitive.array.groovy",
-				"storage.type.primitive.groovy"
+				"storage.type.primitive.groovy",
+				"variable.other.enummember",
 			],
 			"settings": {
-				"foreground": "#339999"
+				"foreground": "#6666CC"
 			}
 		},
 		{
@@ -987,7 +986,7 @@
 				"entity.name.scope-resolution"
 			],
 			"settings": {
-				"foreground": "#6666CC"
+				"foreground": "#996699"
 			}
 		},
 		{
@@ -1025,16 +1024,15 @@
 				"constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#339933"
+				"foreground": "#339999"
 			}
 		},
 		{
 			"scope": [
 				"variable.other.constant",
-				"variable.other.enummember"
 			],
 			"settings": {
-				"foreground": "#CC6633"
+				"foreground": "#996666"
 			}
 		},
 		{
